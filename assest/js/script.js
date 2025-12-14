@@ -210,3 +210,19 @@ window.addEventListener('resize', () => {
 });
 
 init();
+
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileLinks = document.querySelectorAll('.mobile-link');
+
+menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    menuBtn.textContent = mobileMenu.classList.contains('hidden') ? '☰' : '✕';
+});
+
+mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuBtn.textContent = '☰';
+    });
+});

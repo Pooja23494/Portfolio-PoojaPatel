@@ -19,6 +19,8 @@
     <!--HEADER Section Start -->
     <header class="fixed w-full z-40 backdrop-blur-sm bg-black/40 dark:bg-white/20 border-b border-white">
         <div class="max-w-6xl mx-auto px-5 py-3 flex items-center justify-between">
+
+            <!-- Logo -->
             <a href="#home" class="flex items-center gap-3 text-white dark:text-black no-underline">
                 <div
                     class="w-10 h-10 rounded-full bg-linear-to-br from-teal-400 to-teal-600 flex items-center justify-center text-black font-bold">
@@ -27,18 +29,35 @@
                 <span class="font-semibold">Pooja Patel</span>
             </a>
 
-            <nav>
+            <!-- Desktop Menu -->
+            <nav class="hidden md:block">
                 <ul class="flex items-center gap-6 text-sm">
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#skills-resume" class="nav-link">Skills</a></li>
-                    <li><a href="#skills-resume" class="nav-link">Resume</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="md:hidden text-teal-400 text-2xl focus:outline-none">
+                ☰
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden bg-black/90 dark:bg-white/95 border-t border-white">
+            <ul class="flex flex-col px-6 py-4 space-y-4 text-sm">
+                <li><a href="#home" class="mobile-link">Home</a></li>
+                <li><a href="#about" class="mobile-link">About</a></li>
+                <li><a href="#skills-resume" class="mobile-link">Skills</a></li>
+                <li><a href="#projects" class="mobile-link">Projects</a></li>
+                <li><a href="#contact" class="mobile-link">Contact</a></li>
+            </ul>
         </div>
     </header>
+
     <!-- HEADER Section End -->
 
     <!-- MAIN Section Start -->
@@ -104,7 +123,7 @@
         <!-- HERO Section End -->
 
         <!-- ABOUT Section Start -->
-        <section id="about" class="pb-20">
+        <section id="about" class="pb-10 md:pb-20">
             <div class="max-w-6xl mx-auto px-5">
                 <div class="grid md:grid-cols-2 gap-10 items-center">
 
@@ -147,7 +166,7 @@
         <!-- ABOUT Section End -->
 
         <!-- SKILLS & RESUME Section Start -->
-        <section id="skills-resume" class="py-20 px-6 md:px-20 bg-black dark:bg-white/5">
+        <section id="skills-resume" class="py-10 md:py-20 px-6 md:px-20 bg-black dark:bg-white/5">
             <div class="max-w-6xl mx-auto px-5">
 
                 <h2 class="text-3xl font-bold mb-12">Skills & Resume</h2>
@@ -248,81 +267,118 @@
         <!-- SKILLS & RESUME Section End-->
 
         <!-- PROJECTS Section Start -->
-        <section id="projects" class="py-20 bg-black/40">
+        <section id="projects" class="py-10 md:py-20 bg-black/40">
             <div class="max-w-6xl mx-auto px-5">
-                <h2 class="text-3xl font-bold mb-6">Projects</h2>
+
+                <h2 class="text-3xl md:text-4xl font-bold mb-10 text-white">
+                    Projects
+                </h2>
 
                 <!-- Featured Project -->
-                <div class="mb-10 reveal" data-reveal>
-                    <div class="relative group rounded-2xl overflow-hidden border border-white">
-                        <div
-                            class="w-full h-72 bg-linear-to-br from-black/60 to-black/30 flex items-center justify-center">
-                            <span class="text-white/30">
-                                <img src="./assest/images/project.png" alt="project1">
-                            </span>
+                <div class="mb-16 reveal" data-reveal>
+                    <div
+                        class="group grid md:grid-cols-2 rounded-2xl overflow-hidden border border-white/10 bg-black/30 hover:border-teal-400 transition">
+
+                        <!-- Image -->
+                        <div class="h-64 md:h-full overflow-hidden">
+                            <img src="./assest/images/project.png" alt="Shivaji Good Poha"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         </div>
-                        <div class="p-6">
-                            <h3 class="text-2xl font-semibold text-black">Shivaji Good Poha</h3>
-                            <p class="text-black mt-2">This project is a fully responsive and animated promotional
-                                website for Shivaji Poha, a premium Poha (flattened rice) brand under Shanti Food
-                                Product. The site showcases product offerings, company values, contact details, and
-                                delicious recipes made using Poha.</p>
-                            <div class="mt-4 flex items-center justify-between">
-                                <div class="text-xs text-black">HTML • JS • CSS • BOOTSTRAP</div>
+
+                        <!-- Content -->
+                        <div class="p-6 md:p-8 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-2xl font-semibold text-white mb-3">
+                                    Shivaji Good Poha
+                                </h3>
+
+                                <p class="text-white/70 text-sm leading-relaxed">
+                                    Fully responsive and animated promotional website for Shivaji Poha, showcasing
+                                    products,
+                                    brand values, contact details, and Poha recipes with smooth UI interactions.
+                                </p>
+                            </div>
+
+                            <div class="mt-6 flex flex-wrap items-center justify-between gap-4">
+                                <span class="text-xs text-white/50">
+                                    HTML • CSS • JS • Bootstrap
+                                </span>
+
                                 <a href="https://www.shivajigoodpoha.com" target="_blank"
-                                    class="text-teal-300 font-medium hover:underline">View ↗</a>
+                                    class="text-teal-400 font-medium hover:underline">
+                                    View Project ↗
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Smaller Projects Grid -->
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Project card 1 -->
+                <!-- Other Projects -->
+                <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+                    <!-- Card 1 -->
                     <div class="reveal" data-reveal>
-                        <div class="group relative rounded-xl overflow-hidden border border-white">
-                            <div
-                                class="w-full h-44 bg-linear-to-br from-black/60 to-black/30 flex items-center justify-center">
-                                <span class="text-white/30">
-                                    <img src="./assest/images/project2.png" alt="project2">
-                                </span>
+                        <div
+                            class="group rounded-xl overflow-hidden border border-white/10 bg-black/30 hover:border-teal-400 transition h-full flex flex-col">
+
+                            <div class="h-44 overflow-hidden">
+                                <img src="./assest/images/project2.png" alt="Stylish Project"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                             </div>
-                            <div class="p-4">
-                                <h3 class="font-semibold">Stylish</h3>
-                                <p class="text-white/60 text-sm mt-2">This project is a JavaScript Practical Exam
-                                    solution built to demonstrate core JavaScript concepts including DOM manipulation,
-                                    functions, event handling, arrays/objects, and basic UI interactions. It is deployed
-                                    using Vercel for fast and reliable hosting.</p>
-                                <div class="mt-2 text-xs text-white/60">HTML • CSS • BOOTSTRAP • JS</div>
+
+                            <div class="p-5 flex flex-col grow">
+                                <h3 class="font-semibold text-white mb-2">
+                                    Stylish
+                                </h3>
+
+                                <p class="text-white/60 text-sm leading-relaxed grow">
+                                    JavaScript practical project demonstrating DOM manipulation, events, arrays, and UI
+                                    logic.
+                                    Deployed on Vercel.
+                                </p>
+
+                                <span class="mt-4 text-xs text-white/50">
+                                    HTML • CSS • Bootstrap • JS
+                                </span>
                             </div>
                         </div>
                     </div>
-                    <!-- Project card 2 -->
+
+                    <!-- Card 2 -->
                     <div class="reveal" data-reveal>
-                        <div class="group relative rounded-xl overflow-hidden border border-white">
-                            <div
-                                class="w-full h-44 bg-linear-to-br from-black/60 to-black/30 flex items-center justify-center">
-                                <span class="text-white/30">
-                                    <img src="./assest/images/project3.png" alt="">
-                                </span>
+                        <div
+                            class="group rounded-xl overflow-hidden border border-white/10 bg-black/30 hover:border-teal-400 transition h-full flex flex-col">
+
+                            <div class="h-44 overflow-hidden">
+                                <img src="./assest/images/project3.png" alt="Weather App"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                             </div>
-                            <div class="p-4">
-                                <h3 class="font-semibold">Weather App</h3>
-                                <p class="text-white/60 text-sm mt-2">A simple and responsive weather application built
-                                    using HTML, CSS, and JavaScript. It fetches real-time weather information using a
-                                    public Weather API and displays details such as temperature, humidity, wind speed,
-                                    and weather conditions.</p>
-                                <div class="mt-2 text-xs text-white/60">HTML • CSS • JS</div>
+
+                            <div class="p-5 flex flex-col grow">
+                                <h3 class="font-semibold text-white mb-2">
+                                    Weather App
+                                </h3>
+
+                                <p class="text-white/60 text-sm leading-relaxed grow">
+                                    Responsive weather app using a public API showing temperature, humidity, wind speed,
+                                    and
+                                    real-time conditions.
+                                </p>
+
+                                <span class="mt-4 text-xs text-white/50">
+                                    HTML • CSS • JS
+                                </span>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
         <!-- PROJECTS Section End -->
 
         <!-- TESTIMONIALS / SERVICES Section Start -->
-        <section id="testimonials" class="py-20 bg-black/30 dark:bg-white/5">
+        <section id="testimonials" class="py-10 md:py-20 bg-black/30 dark:bg-white/5">
             <div class="max-w-6xl mx-auto px-5">
                 <h2 class="text-3xl font-bold mb-6">What Clients Say / Services</h2>
 
@@ -387,7 +443,7 @@
         <!-- TESTIMONIALS / SERVICES Section End -->
 
         <!-- CONTACT Section Start -->
-        <section id="contact" class="py-20">
+        <section id="contact" class="py-10 md:py-20">
             <div class="max-w-4xl mx-auto px-5">
                 <div class="reveal" data-reveal>
                     <h2 class="text-3xl font-bold">Let's build something together</h2>

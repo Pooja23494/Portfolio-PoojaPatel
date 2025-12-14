@@ -23,6 +23,15 @@ body {
     box-shadow: 0 6px 30px rgba(6, 182, 212, 0.12), 0 0 20px rgba(6, 182, 212, 0.06) inset
 }
 
+.mobile-link {
+    padding: 10px 0;
+    color: rgba(255,255,255,.8);
+}
+
+.mobile-link:hover {
+    color: var(--teal);
+}
+
 .fancy-card {
     position: relative;
     overflow: visible
