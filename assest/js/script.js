@@ -98,9 +98,32 @@ backToTop.addEventListener('click', () => {
 });
 
 // Light/Dark Toggle
-const themeToggle = document.getElementById('themeToggle');
-themeToggle.addEventListener('click', () => {
-    document.documentElement.classList.toggle('dark');
+const toggleBtn = document.getElementById("themeToggle");
+const html = document.documentElement;
+
+// Load saved theme
+if (
+    localStorage.theme === "dark" ||
+    (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+    html.classList.add("dark");
+    toggleBtn.textContent = "☀️";
+} else {
+    html.classList.remove("dark");
+    toggleBtn.textContent = "🌙";
+}
+
+toggleBtn.addEventListener("click", () => {
+    html.classList.toggle("dark");
+
+    if (html.classList.contains("dark")) {
+        localStorage.theme = "dark";
+        toggleBtn.textContent = "☀️";
+    } else {
+        localStorage.theme = "light";
+        toggleBtn.textContent = "🌙";
+    }
 });
 
 const track = document.getElementById('carousel-track');
