@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="scroll-smooth dark">
 
 <head>
     <meta charset="UTF-8">
@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="./assest/css/style.css" type="text/css" />
 </head>
 
-<body class="antialiased bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
+<body class="antialiased text-black dark:text-white transition-colors duration-300">
     <!--HEADER Section Start -->
     <header class="fixed w-full z-40 backdrop-blur-sm bg-black/40 dark:bg-white/20 border-b border-white">
         <div class="max-w-6xl mx-auto px-5 py-3 flex items-center justify-between">
 
             <!-- Logo -->
-            <a href="#home" class="flex items-center gap-3text-black dark:text-white no-underline">
+            <a href="#home" class="flex items-center gap-3 text-white dark:text-black no-underline">
                 <div
                     class="w-10 h-10 rounded-full bg-linear-to-br from-teal-400 to-teal-600 flex items-center justify-center text-black font-bold">
                     PP
@@ -57,16 +57,16 @@
     <!-- HEADER Section End -->
 
     <!-- MAIN Section Start -->
-    <main class="pt-20">
+    <main>
 
         <!-- HERO Section Start -->
-        <section id="home" class="min-h-screen flex items-center">
+        <section id="home" class="pt-20 min-h-screen bg-black/40 dark:bg-white/5 flex items-center">
             <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-10 items-center">
 
                 <div class="space-y-6">
                     <p class="text-teal-300 text-sm font-medium">Hello 👋, I'm</p>
                     <h1 class="text-4xl md:text-6xl leading-tight font-extrabold">
-                        Pooja <span class="accent-teal">Patel</span>
+                        Pooja <span class="text-teal-400">Patel</span>
                     </h1>
 
                     <p class="typewriter text-xl md:text-2xl text-white/80 dark:text-black/70">
@@ -271,7 +271,7 @@
         <section id="projects" class="py-20 bg-black/40 dark:bg-white/5">
             <div class="max-w-6xl mx-auto px-5">
 
-                <h2 class="text-3xl md:text-4xl font-bold mb-10 text-white dark:text-black">
+                <h2 class="text-3xl font-bold mb-12">
                     Projects
                 </h2>
 
@@ -289,7 +289,7 @@
                         <!-- Content -->
                         <div class="p-6 md:p-8 flex flex-col justify-between">
                             <div>
-                                <h3 class="text-2xl font-semibold text-black dark:text-white mb-3">
+                                <h3 class="text-2xl font-semibold mb-3">
                                     Shivaji Good Poha
                                 </h3>
 
@@ -328,7 +328,7 @@
                             </div>
 
                             <div class="p-5 flex flex-col grow">
-                                <h3 class="font-semiboldtext-black dark:text-white mb-2">
+                                <h3 class="font-semibold mb-2">
                                     Stylish
                                 </h3>
 
@@ -356,7 +356,7 @@
                             </div>
 
                             <div class="p-5 flex flex-col grow">
-                                <h3 class="font-semiboldtext-black dark:text-white mb-2">
+                                <h3 class="font-semibold mb-2">
                                     Weather App
                                 </h3>
 
@@ -385,70 +385,72 @@
 
                 <div class="relative overflow-hidden">
                     <div id="carousel-track"
-                        class="flex gap-6 will-change-transform items-stretch min-h-64 md:min-h-72">
+                        class="flex gap-4 md:gap-6 will-change-transform items-stretch min-h-64 md:min-h-72 px-[7.5%] md:px-0">
+
                         <!-- Slide 1 -->
-                        <div class="carousel-item shrink-0 w-full md:w-1/2 lg:w-1/3 p-4 flex">
+                        <div class="carousel-item shrink-0 w-[85%] sm:w-[80%] md:w-1/2 lg:w-1/3 px-2 md:px-4 flex">
                             <div
                                 class="p-6 bg-black/40 dark:bg-white/10 rounded-2xl fancy-card glow-teal flex flex-col w-full">
-
                                 <p class="text-white/70 dark:text-black/70 mb-4 grow">
                                     "Excellent, working with web designer express was great. Thanks to their knowledge
                                     and determination our website looks great and functions really good."
                                 </p>
-
                                 <div class="mt-auto">
                                     <div class="font-semibold text-teal-400">— Sunil Sharma</div>
                                     <div class="text-sm text-white/60 dark:text-black/60">Web Design Project</div>
                                 </div>
-
                             </div>
                         </div>
+
                         <!-- Slide 2 -->
-                        <div class="carousel-item shrink-0 w-full md:w-1/2 lg:w-1/3 p-4 flex">
+                        <div class="carousel-item shrink-0 w-[85%] sm:w-[80%] md:w-1/2 lg:w-1/3 px-2 md:px-4 flex">
                             <div
                                 class="p-6 bg-black/40 dark:bg-white/10 rounded-2xl fancy-card glow-teal flex flex-col w-full">
-                                <p class="text-white/70 dark:text-black/70 mb-4 grow">"Pooja delivered an amazing UI
-                                    with
-                                    smooth animations. Our project now feels alive!"</p>
+                                <p class="text-white/70 dark:text-black/70 mb-4 grow">
+                                    "Pooja delivered an amazing UI with smooth animations. Our project now feels alive!"
+                                </p>
                                 <div class="mt-auto">
                                     <div class="font-semibold text-teal-400">— Client A</div>
                                     <div class="text-sm text-white/60 dark:text-black/60">Web Design Project</div>
                                 </div>
                             </div>
                         </div>
+
                         <!-- Slide 3 -->
-                        <div class="carousel-item shrink-0 w-full md:w-1/2 lg:w-1/3 p-4 flex">
+                        <div class="carousel-item shrink-0 w-[85%] sm:w-[80%] md:w-1/2 lg:w-1/3 px-2 md:px-4 flex">
                             <div
                                 class="p-6 bg-black/40 dark:bg-white/10 rounded-2xl fancy-card glow-teal flex flex-col w-full">
-                                <p class="text-white/70 dark:text-black/70 mb-4 grow">"Excellent front-end development!
-                                    Fast,
-                                    clean, and interactive."</p>
+                                <p class="text-white/70 dark:text-black/70 mb-4 grow">
+                                    "Excellent front-end development! Fast, clean, and interactive."
+                                </p>
                                 <div class="mt-auto">
                                     <div class="font-semibold text-teal-400">— Client B</div>
                                     <div class="text-sm text-white/60 dark:text-black/60">Dashboard App</div>
                                 </div>
                             </div>
                         </div>
+
                         <!-- Slide 4 -->
-                        <div class="carousel-item shrink-0 w-full md:w-1/2 lg:w-1/3 p-4 flex">
+                        <div class="carousel-item shrink-0 w-[85%] sm:w-[80%] md:w-1/2 lg:w-1/3 px-2 md:px-4 flex">
                             <div
                                 class="p-6 bg-black/40 dark:bg-white/10 rounded-2xl fancy-card glow-teal flex flex-col w-full">
-                                <p class="text-white/70 dark:text-black/70 mb-4 grow">"Professional, detail-oriented,
-                                    and
-                                    very creative."</p>
+                                <p class="text-white/70 dark:text-black/70 mb-4 grow">
+                                    "Professional, detail-oriented, and very creative."
+                                </p>
                                 <div class="mt-auto">
                                     <div class="font-semibold text-teal-400">— Client C</div>
                                     <div class="text-sm text-white/60 dark:text-black/60">UI Animation</div>
                                 </div>
                             </div>
                         </div>
+
                         <!-- Slide 5 -->
-                        <div class="carousel-item shrink-0 w-full md:w-1/2 lg:w-1/3 p-4 flex">
+                        <div class="carousel-item shrink-0 w-[85%] sm:w-[80%] md:w-1/2 lg:w-1/3 px-2 md:px-4 flex">
                             <div
                                 class="p-6 bg-black/40 dark:bg-white/10 rounded-2xl fancy-card glow-teal flex flex-col w-full">
-                                <p class="text-white/70 dark:text-black/70 mb-4 grow">"Creative animations and clean
-                                    code –
-                                    highly recommended!"</p>
+                                <p class="text-white/70 dark:text-black/70 mb-4 grow">
+                                    "Creative animations and clean code – highly recommended!"
+                                </p>
                                 <div class="mt-auto">
                                     <div class="font-semibold text-teal-400">— Client D</div>
                                     <div class="text-sm text-white/60 dark:text-black/60">Portfolio Website</div>
@@ -457,14 +459,19 @@
                         </div>
                     </div>
 
-                    <!-- Carousel Arrows -->
+                    <!-- Carousel Arrows (hidden on mobile) -->
                     <button id="prev"
-                        class="absolute top-1/2 -translate-y-1/2 left-0 bg-teal-400/70 hover:bg-teal-400 text-black rounded-full w-10 h-10 flex items-center justify-center z-10">‹</button>
+                        class="hidden md:flex absolute top-1/2 -translate-y-1/2 left-0 bg-teal-400/70 hover:bg-teal-400 text-black rounded-full w-10 h-10 items-center justify-center z-10">
+                        ‹
+                    </button>
                     <button id="next"
-                        class="absolute top-1/2 -translate-y-1/2 right-0 bg-teal-400/70 hover:bg-teal-400 text-black rounded-full w-10 h-10 flex items-center justify-center z-10">›</button>
+                        class="hidden md:flex absolute top-1/2 -translate-y-1/2 right-0 bg-teal-400/70 hover:bg-teal-400 text-black rounded-full w-10 h-10 items-center justify-center z-10">
+                        ›
+                    </button>
                 </div>
             </div>
         </section>
+
         <!-- TESTIMONIALS / SERVICES Section End -->
 
         <!-- CONTACT Section Start -->
@@ -477,13 +484,15 @@
                         and I'll get back to you.</p>
                     <form id="contactForm" method="post" class="mt-6 grid gap-4">
                         <div class="grid md:grid-cols-2 gap-4">
-                            <input name="name" aria-label="Your name" placeholder="Your name" required
-                                class="p-3 rounded-md bg-black/30 dark:bg-white/10 border border-white" />
+                            <input name="name" aria-label="Your name" placeholder="Your name" required class="p-3 rounded-md bg-black/30 dark:bg-white/10 border border-white text-white dark:text-black 
+                                placeholder-white/60 dark:placeholder-black/60" />
                             <input name="email" type="email" aria-label="Your email" placeholder="Your email" required
-                                class="p-3 rounded-md bg-black/30 dark:bg-white/10 border border-white" />
+                                class="p-3 rounded-md bg-black/30 dark:bg-white/10 border border-white text-white dark:text-black 
+                                placeholder-white/60 dark:placeholder-black/60" />
                         </div>
                         <textarea name="message" aria-label="Message" rows="6" placeholder="Tell me about your project"
-                            class="p-3 rounded-md bg-black/30 dark:bg-white/10 border border-white"></textarea>
+                            class="p-3 rounded-md bg-black/30 dark:bg-white/10 border border-white text-white dark:text-black
+                          placeholder-white/60 dark:placeholder-black/60"></textarea>
                         <div class="flex items-center gap-4">
                             <button type="submit"
                                 class="px-5 py-3 bg-teal-400 text-black rounded-md font-medium cursor-pointer">Send

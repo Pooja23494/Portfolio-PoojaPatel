@@ -98,32 +98,29 @@ backToTop.addEventListener('click', () => {
 });
 
 // Light/Dark Toggle
-const toggleBtn = document.getElementById("themeToggle");
 const html = document.documentElement;
+const toggleBtn = document.getElementById("themeToggle");
 
-// Load saved theme
-if (
-    localStorage.theme === "dark" ||
-    (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-) {
-    html.classList.add("dark");
-    toggleBtn.textContent = "☀️";
-} else {
-    html.classList.remove("dark");
-    toggleBtn.textContent = "🌙";
+// Default = dark
+if (!localStorage.getItem("theme")) {
+  html.classList.add("dark");
+  localStorage.setItem("theme", "dark");
 }
 
-toggleBtn.addEventListener("click", () => {
-    html.classList.toggle("dark");
+// Apply saved theme
+if (localStorage.getItem("theme") === "dark") {
+  html.classList.add("dark");
+} else {
+  html.classList.remove("dark");
+}
 
-    if (html.classList.contains("dark")) {
-        localStorage.theme = "dark";
-        toggleBtn.textContent = "☀️";
-    } else {
-        localStorage.theme = "light";
-        toggleBtn.textContent = "🌙";
-    }
+// Toggle on click
+toggleBtn.addEventListener("click", () => {
+  html.classList.toggle("dark");
+  localStorage.setItem(
+    "theme",
+    html.classList.contains("dark") ? "dark" : "light"
+  );
 });
 
 const track = document.getElementById('carousel-track');
