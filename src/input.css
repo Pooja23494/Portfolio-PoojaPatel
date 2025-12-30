@@ -1,1 +1,88 @@
 @import "tailwindcss";
+
+@layer components {
+  .fancy-card {
+    @apply relative overflow-visible;
+  }
+
+  .fancy-card::after {
+    content: "";
+    @apply absolute -inset-0.5 z-0 rounded-2xl
+           opacity-0 scale-[0.98]
+           transition-all duration-300 ease-in-out
+           pointer-events-none blur-lg;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(6, 182, 212, 0.12),
+      transparent
+    );
+  }
+
+  .fancy-card:hover::after {
+    @apply opacity-100 scale-100;
+  }
+}
+
+@layer components {
+  .typewriter {
+    @apply font-semibold;
+  }
+
+  .typewriter .cursor {
+    @apply inline-block align-middle ml-1.5
+           opacity-90;
+    width: 2px;
+    height: 1.1em;
+    background: var(--teal);
+    animation: blink 1s steps(2) infinite;
+  }
+}
+
+/* Animation */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@layer components {
+  .reveal {
+    @apply opacity-0 translate-y-4.5 scale-[0.995]
+           transition-[clip-path,transform,opacity]
+           duration-800;
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    transition-timing-function:
+      cubic-bezier(.2, .9, .3, 1),
+      ease,
+      ease;
+  }
+
+  .reveal.in-view {
+    @apply opacity-100 translate-y-0 scale-100;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply relative text-white/80 dark:text-black/70
+           transition-colors duration-300
+           hover:text-(--teal);
+  }
+
+  nav a.active {
+    @apply relative;
+  }
+
+  nav a.active::after {
+    content: "";
+    @apply absolute left-1/2 -translate-x-1/2
+           -bottom-1.5
+           w-[40%] h-0.75
+           rounded
+           shadow-[0_8px_24px_rgba(6,182,212,0.12)];
+    background: var(--teal);
+  }
+}
+

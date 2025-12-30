@@ -26,98 +26,8 @@ body {
     box-shadow: 0 6px 30px rgba(6, 182, 212, 0.12), 0 0 20px rgba(6, 182, 212, 0.06) inset
 }
 
-.mobile-link {
-    padding: 10px 0;
-    display: block;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.mobile-link:hover {
-    color: var(--teal);
-}
-
-.fancy-card {
-    position: relative;
-    overflow: visible
-}
-
-.fancy-card::after {
-    content: "";
-    position: absolute;
-    inset: -2px;
-    z-index: 0;
-    border-radius: 1rem;
-    background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.12), transparent);
-    filter: blur(10px);
-    opacity: 0;
-    transition: opacity .35s ease, transform .35s ease;
-    transform: scale(.98);
-    pointer-events: none;
-}
-
-.fancy-card:hover::after {
-    opacity: 1;
-    transform: scale(1)
-}
-
-.typewriter {
-    font-weight: 600
-}
-
-.typewriter .cursor {
-    display: inline-block;
-    width: 2px;
-    height: 1.1em;
-    background: var(--teal);
-    margin-left: 6px;
-    vertical-align: middle;
-    background: var(--teal);
-    opacity: 0.9;
-    animation: blink 1s steps(2) infinite;
-}
-
-@keyframes blink {
-    50% {
-        opacity: 0
-    }
-}
-
-.reveal {
-    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-    transform: translateY(18px) scale(.995);
-    opacity: 0;
-    transition: clip-path .8s cubic-bezier(.2, .9, .3, 1), transform .6s ease, opacity .6s ease;
-}
-
-.reveal.in-view {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    transform: none;
-    opacity: 1;
-}
-
-nav a.active {
-    position: relative
-}
-
-nav a.active::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -6px;
-    width: 40%;
-    height: 3px;
-    border-radius: 3px;
-    background: var(--teal);
-    box-shadow: 0 8px 24px rgba(6, 182, 212, 0.12)
-}
-
-@media (max-width:768px) {
-    .typewriter {
-        font-size: 1.05rem
-    }
-}
+.carousel-item { opacity: 0; transform: translateX(24px); transition: all 0.6s ease; } 
+.carousel-item.slide-in { opacity: 1; transform: translateX(0); }
 
 /* Neon Back to Top */
 #backToTop {
@@ -127,17 +37,4 @@ nav a.active::after {
 /* Skill Progress Animation */
 .skill-bar {
     box-shadow: 0 0 12px rgba(6, 182, 212, 0.6);
-}
-
-
-/* Slide-in + fade animation */
-.carousel-item {
-    opacity: 0;
-    transform: translateX(24px);
-    transition: all 0.6s ease;
-}
-
-.carousel-item.slide-in {
-    opacity: 1;
-    transform: translateX(0);
 }
