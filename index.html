@@ -94,32 +94,40 @@
         <section id="home" class="pt-20 min-h-screen bg-black/40 dark:bg-white/5 flex items-center">
             <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-10 items-center">
 
+                <!-- INTRO TEXT -->
                 <div class="space-y-6">
                     <p class="text-teal-300 text-sm font-medium">Hello 👋, I'm</p>
-                    <h1 class="text-4xl md:text-6xl leading-tight font-extrabold">
+                    <h1 class="text-4xl md:text-6xl leading-tight font-extrabold text-white dark:text-neutral-900">
                         Pooja <span class="text-teal-400">Patel</span>
                     </h1>
 
+                    <!-- TYPEWRITER EFFECT -->
                     <p class="typewriter text-[1.05rem] md:text-xl font-semibold text-white/80 dark:text-black/70">
                         <span id="typed"></span>
                         <span class="cursor" aria-hidden="true"></span>
                     </p>
 
+                    <!-- SHORT TAGLINE -->
                     <p class="text-lg text-white/60 dark:text-black/60 max-w-xl">
-                        I build fast, accessible and animated user interfaces with vanilla JavaScript and Tailwind CSS.
-                        I focus on modern interactions, micro-animations and delightful UX.
+                        I build <strong>fast, responsive, and accessible web interfaces</strong> using
+                        <strong>JavaScript</strong> and modern CSS frameworks like <strong>Tailwind CSS</strong> and
+                        <strong>Bootstrap</strong>.
                     </p>
 
-                    <div class="flex gap-4 items-center">
+                    <!-- CTA BUTTONS -->
+                    <div class="flex gap-4 items-center flex-wrap">
                         <a href="#projects"
-                            class="inline-flex items-center gap-3 px-5 py-3 rounded-lg bg-linear-to-r from-teal-400/90 to-teal-600 text-black font-semibold shadow-lg hover:scale-[1.02] transition transform">View
-                            Work</a>
+                            class="inline-flex items-center gap-3 px-5 py-3 rounded-lg bg-linear-to-r from-teal-400/90 to-teal-600 text-black font-semibold shadow-lg hover:scale-[1.02] transition transform">
+                            View Work
+                        </a>
                         <a href="#contact"
-                            class="inline-flex items-center gap-3 px-4 py-3 rounded-lg border border-white text-sm">Contact
-                            Me</a>
+                            class="inline-flex items-center gap-3 px-4 py-3 rounded-lg border border-white text-sm hover:bg-white/10 transition">
+                            Contact Me
+                        </a>
                     </div>
                 </div>
 
+                <!-- PROFILE CARD -->
                 <div
                     class="relative overflow-visible fancy-card p-6 rounded-2xl bg-linear-to-b from-white/1 to-transparent shadow-inner">
                     <div class="absolute -inset-0.5 rounded-2xl bg-linear-to-br from-black/70 to-transparent blur-lg">
@@ -128,11 +136,10 @@
                     <div class="relative z-10 grid gap-4">
                         <div
                             class="w-full h-64 rounded-xl overflow-hidden bg-linear-to-br from-black/60 to-black/30 flex items-center justify-center">
-
-                            <img src="./assest/images/Pooja.jpeg" alt="My Profile"
+                            <img src="./assest/images/Pooja.jpeg" alt="Pooja Patel – Front-End Developer"
                                 class="w-40 h-40 object-cover rounded-full border-2 border-teal-400" />
-
                         </div>
+
                         <div class="grid grid-cols-2 gap-4">
                             <div class="p-4 rounded-xl border border-white text-sm">
                                 <div class="text-xs text-white/60 dark:text-black/60">Location</div>
@@ -148,6 +155,7 @@
 
             </div>
         </section>
+
         <!-- HERO Section End -->
 
         <!-- ABOUT Section Start -->
@@ -155,35 +163,57 @@
             <div class="max-w-6xl mx-auto px-5">
                 <div class="grid md:grid-cols-2 gap-10 items-center">
 
+                    <!-- ABOUT ME TEXT -->
                     <div class="reveal" data-reveal>
-                        <h2 class="text-3xl font-bold">About me</h2>
-                        <p class="mt-4 text-white/70 dark:text-black/70 leading-relaxed">
-                            I’m a front-end developer who loves translating designs into fast, accessible and animated
-                            web experiences using vanilla JavaScript and Tailwind CSS. I care about performance,
-                            accessibility and pixel-perfect details.
+                        <h2 class="text-3xl font-bold text-white dark:text-neutral-900">
+                            About Me
+                        </h2>
+                        <p class="mt-4 text-white/70 dark:text-black/70 leading-relaxed text-sm">
+                            I am a passionate <strong>Front-End Developer</strong> who transforms design ideas into
+                            functional, responsive, and accessible websites.
+                            I focus on clean markup, performance optimization, and creating engaging user experiences.
+                            Continuously learning modern front-end tools and best practices to deliver scalable,
+                            production-ready code.
                         </p>
+
                         <ul class="mt-6 grid grid-cols-3 gap-3 text-sm">
-                            <li class="p-3 bg-black/40 dark:bg-white/10 rounded-lg">HTML5 & CSS3</li>
-                            <li class="p-3 bg-black/40 dark:bg-white/10 rounded-lg">Bootstrap</li>
-                            <li class="p-3 bg-black/40 dark:bg-white/10 rounded-lg">Vanilla JavaScript</li>
-                            <li class="p-3 bg-black/40 dark:bg-white/10 rounded-lg">Tailwind CSS</li>
-                            <li class="p-3 bg-black/40 dark:bg-white/10 rounded-lg">Responsive Design</li>
+                            <li class="p-3 bg-black/40 dark:bg-white/10 rounded-lg text-white dark:text-black">HTML5 &
+                                CSS3</li>
+                            <li class="p-3 bg-black/40 dark:bg-white/10 rounded-lg text-white dark:text-black">Bootstrap
+                            </li>
+                            <li class="p-3 bg-black/40 dark:bg-white/10 rounded-lg text-white dark:text-black">Vanilla
+                                JavaScript</li>
+                            <li class="p-3 bg-black/40 dark:bg-white/10 rounded-lg text-white dark:text-black">Tailwind
+                                CSS</li>
+                            <li class="p-3 bg-black/40 dark:bg-white/10 rounded-lg text-white dark:text-black">
+                                Responsive Design</li>
+                            <li class="p-3 bg-black/40 dark:bg-white/10 rounded-lg text-white dark:text-black">
+                                Accessibility (WCAG)</li>
                         </ul>
                     </div>
 
+                    <!-- WHAT I BRING -->
                     <div class="reveal" data-reveal>
                         <div
                             class="p-6 rounded-2xl fancy-card bg-linear-to-br from-white/2 to-transparent border border-white">
-                            <h3 class="font-semibold">What I bring to the table</h3>
-                            <p class="text-sm mt-3 text-white/70 dark:text-black/70">
+                            <h3 class="font-semibold text-white dark:text-neutral-900">What I Bring to the Table</h3>
+                            <p class="text-sm mt-3 text-white/70 dark:text-black/70 leading-relaxed">
                                 From micro-interactions and animated states to optimized markup and accessible
-                                components. I prototype quickly and ship production-ready code.
+                                components,
+                                I prototype quickly and deliver <strong>production-ready, high-performance front-end
+                                    code</strong>.
+                                My work focuses on <strong>responsive UI, clean code, and smooth user
+                                    experiences</strong>.
                             </p>
-                            <div class="mt-6 flex gap-3">
-                                <a href="#projects" class="px-4 py-2 rounded-md border border-white text-sm">See
-                                    projects</a>
-                                <a href="#contact" class="px-4 py-2 rounded-md bg-teal-500 text-black font-medium">Let’s
-                                    talk</a>
+                            <div class="mt-6 flex gap-3 flex-wrap">
+                                <a href="#projects"
+                                    class="px-4 py-2 rounded-md border border-white text-sm text-white dark:text-black hover:bg-white/10">
+                                    See Projects
+                                </a>
+                                <a href="#contact"
+                                    class="px-4 py-2 rounded-md bg-teal-500 text-black font-medium hover:bg-teal-400 transition">
+                                    Let’s Talk
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -191,100 +221,138 @@
                 </div>
             </div>
         </section>
+
         <!-- ABOUT Section End -->
 
         <!-- SKILLS & RESUME Section Start -->
-        <section id="skills-resume" class="py-20 px-6 md:px-20 bg-black/40 dark:bg-white/5">
+        <section id="skills-resume" class="py-20 px-6 md:px-20
+         bg-black/40 dark:bg-white/5">
             <div class="max-w-6xl mx-auto px-5">
 
-                <h2 class="text-3xl font-bold mb-12">Skills & Resume</h2>
+                <!-- SECTION TITLE -->
+                <h2 class="text-3xl font-bold mb-12
+             text-white dark:text-neutral-900">
+                    Skills & Resume
+                </h2>
 
                 <div class="grid md:grid-cols-2 gap-14 items-start">
 
-                    <!-- LEFT COLUMN : SKILLS -->
+                    <!-- LEFT : SKILLS -->
                     <div>
-                        <h3 class="text-2xl font-bold mb-6">Technical Skills</h3>
+                        <h3 class="text-2xl font-bold mb-6
+                 text-white dark:text-neutral-900">
+                            Technical Skills
+                        </h3>
+
+                        <p class="mb-8 max-w-md
+                 text-white/70 dark:text-neutral-600">
+                            Technologies and tools I use to build responsive, accessible,
+                            and performance-focused web interfaces.
+                        </p>
 
                         <div class="space-y-6">
+
+                            <!-- SKILL ITEM -->
                             <div>
-                                <div class="flex justify-between mb-1">
-                                    <span>HTML5</span><span>92%</span>
+                                <div class="flex justify-between mb-1 text-sm">
+                                    <span>HTML5</span>
+                                    <span>90%</span>
                                 </div>
-                                <div class="w-full bg-gray-800 h-2 rounded-full dark:bg-gray-300">
-                                    <div class="skill-bar bg-teal-400 h-2 rounded-full w-0" data-progress="92"></div>
+                                <div class="w-full h-2 rounded-full bg-gray-800 dark:bg-gray-300">
+                                    <div class="skill-bar h-2 rounded-full bg-teal-400 w-0" data-progress="90"></div>
                                 </div>
                             </div>
 
                             <div>
-                                <div class="flex justify-between mb-1">
-                                    <span>CSS3</span><span>88%</span>
+                                <div class="flex justify-between mb-1 text-sm">
+                                    <span>CSS3</span>
+                                    <span>88%</span>
                                 </div>
-                                <div class="w-full bg-gray-800 h-2 rounded-full dark:bg-gray-300">
-                                    <div class="skill-bar bg-teal-400 h-2 rounded-full w-0" data-progress="88"></div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="flex justify-between mb-1">
-                                    <span>Bootstrap</span><span>91%</span>
-                                </div>
-                                <div class="w-full bg-gray-800 h-2 rounded-full dark:bg-gray-300">
-                                    <div class="skill-bar bg-teal-400 h-2 rounded-full w-0" data-progress="91"></div>
+                                <div class="w-full h-2 rounded-full bg-gray-800 dark:bg-gray-300">
+                                    <div class="skill-bar h-2 rounded-full bg-teal-400 w-0" data-progress="88"></div>
                                 </div>
                             </div>
 
                             <div>
-                                <div class="flex justify-between mb-1">
-                                    <span>DSA with C++</span><span>95%</span>
+                                <div class="flex justify-between mb-1 text-sm">
+                                    <span>JavaScript (ES6+)</span>
+                                    <span>85%</span>
                                 </div>
-                                <div class="w-full bg-gray-800 h-2 rounded-full dark:bg-gray-300">
-                                    <div class="skill-bar bg-teal-400 h-2 rounded-full w-0" data-progress="95"></div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="flex justify-between mb-1">
-                                    <span>JavaScript</span><span>90%</span>
-                                </div>
-                                <div class="w-full bg-gray-800 h-2 rounded-full dark:bg-gray-300">
-                                    <div class="skill-bar bg-teal-400 h-2 rounded-full w-0" data-progress="90"></div>
+                                <div class="w-full h-2 rounded-full bg-gray-800 dark:bg-gray-300">
+                                    <div class="skill-bar h-2 rounded-full bg-teal-400 w-0" data-progress="85"></div>
                                 </div>
                             </div>
 
                             <div>
-                                <div class="flex justify-between mb-1">
-                                    <span>Tailwind CSS</span><span>85%</span>
+                                <div class="flex justify-between mb-1 text-sm">
+                                    <span>Tailwind CSS</span>
+                                    <span>91%</span>
                                 </div>
-                                <div class="w-full bg-gray-800 h-2 rounded-full dark:bg-gray-300">
-                                    <div class="skill-bar bg-teal-400 h-2 rounded-full w-0" data-progress="85"></div>
+                                <div class="w-full h-2 rounded-full bg-gray-800 dark:bg-gray-300">
+                                    <div class="skill-bar h-2 rounded-full bg-teal-400 w-0" data-progress="91"></div>
                                 </div>
                             </div>
+
+                            <div>
+                                <div class="flex justify-between mb-1 text-sm">
+                                    <span>Bootstrap 5</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="w-full h-2 rounded-full bg-gray-800 dark:bg-gray-300">
+                                    <div class="skill-bar h-2 rounded-full bg-teal-400 w-0" data-progress="90"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between mb-1 text-sm">
+                                    <span>DSA with C++ (Basics)</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="w-full h-2 rounded-full bg-gray-800 dark:bg-gray-300">
+                                    <div class="skill-bar h-2 rounded-full bg-teal-400 w-0" data-progress="95"></div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
-                    <!-- RIGHT COLUMN : RESUME -->
+                    <!-- RIGHT : RESUME -->
                     <div>
-                        <h3 class="text-2xl font-bold mb-6">Resume</h3>
+                        <h3 class="text-2xl font-bold mb-6
+                 text-white dark:text-neutral-900">
+                            Resume
+                        </h3>
 
-                        <p class="text-white/70 dark:text-black/70 mb-6 max-w-md">
-                            Download my updated resume including education, experience,
-                            and real-world front-end projects focused on performance and UI animation.
+                        <p class="mb-6 max-w-md
+                 text-white/70 dark:text-neutral-600">
+                            Download my resume to learn more about my education, technical skills,
+                            and front-end projects focused on clean UI and responsive design.
                         </p>
 
-                        <div class="p-6 rounded-2xl border border-white dark:border-black fancy-card">
-                            <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                        <div class="p-6 rounded-2xl
+                 border border-white/20 dark:border-neutral-300
+                 fancy-card">
+                            <div class="flex flex-col gap-4
+                   sm:flex-row sm:items-center sm:justify-between">
 
-                                <!-- Text -->
+                                <!-- TEXT -->
                                 <div class="text-center sm:text-left">
-                                    <p class="font-semibold text-lg">Pooja Patel</p>
-                                    <p class="text-sm text-white/60 dark:text-black/60">
+                                    <p class="font-semibold text-lg
+                       text-white dark:text-neutral-900">
+                                        Pooja Patel
+                                    </p>
+                                    <p class="text-sm
+                       text-white/60 dark:text-neutral-600">
                                         Front-End Developer
                                     </p>
                                 </div>
 
-                                <!-- Button -->
-                                <a href="./assest/PoojaPatel_Resume.pdf" download
-                                    class="w-full sm:w-auto text-center px-6 py-3 bg-teal-500 text-black font-semibold rounded-lg hover:bg-teal-400 transition">
+                                <!-- BUTTON -->
+                                <a href="./assest/PoojaPatel_Resume.pdf" download class="w-full sm:w-auto text-center
+                     px-6 py-3 rounded-lg
+                     bg-teal-500 text-black font-semibold
+                     transition hover:bg-teal-400
+                     focus:outline-none focus:ring-2 focus:ring-teal-400">
                                     Download Resume
                                 </a>
 
@@ -296,87 +364,125 @@
                 </div>
             </div>
         </section>
+
         <!-- SKILLS & RESUME Section End-->
 
         <!-- PROJECTS Section Start -->
         <section id="projects" class="py-20 bg-black/40 dark:bg-white/5">
             <div class="max-w-6xl mx-auto px-5">
 
-                <h2 class="text-3xl font-bold mb-12">
+                <!-- SECTION TITLE -->
+                <h2 class="text-3xl font-bold mb-12 text-white dark:text-neutral-900">
                     Projects
                 </h2>
 
-                <!-- Featured Project -->
+                <!-- FEATURED PROJECT -->
                 <div class="mb-16 reveal" data-reveal>
                     <div
                         class="group grid md:grid-cols-2 rounded-2xl overflow-hidden border border-white bg-black/30 hover:border-teal-400 transition">
 
                         <!-- Image -->
                         <div class="h-64 md:h-full overflow-hidden">
-                            <img src="./assest/images/project.png" alt="Shivaji Good Poha"
+                            <img src="./assest/images/project.png" alt="Shivaji Good Poha Website"
                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         </div>
 
                         <!-- Content -->
                         <div class="p-6 md:p-8 flex flex-col justify-between">
                             <div>
-                                <h3 class="text-2xl font-semibold mb-3">
-                                    Shivaji Good Poha
+                                <h3 class="text-2xl font-semibold mb-3 text-white dark:text-neutral-900">
+                                    Shivaji Good Poha – Business Website
                                 </h3>
 
-                                <p class="text-white/70 text-sm leading-relaxed">
-                                    Fully responsive and animated promotional website for Shivaji Poha, showcasing
-                                    products,
-                                    brand values, contact details, and Poha recipes with smooth UI interactions.
+                                <p class="text-white/70 text-sm leading-relaxed mb-3">
+                                    Developed a responsive and user-friendly website for <strong>Shivaji Good
+                                        Poha</strong>, a premium poha brand.
+                                    Focused on clean UI, accessibility, and responsive layouts to showcase products,
+                                    brand values, and business info.
+                                    Implemented intuitive navigation and interactive components to improve user
+                                    experience and brand credibility.
                                 </p>
+
+                                <ul class="list-disc list-inside mb-3 text-white/80 dark:text-neutral-700 text-sm">
+                                    <li>Responsive Web Design using HTML, CSS, Bootstrap, and JavaScript</li>
+                                    <li>Clean UI with focus on accessibility (WCAG principles)</li>
+                                    <li>Interactive features for better user engagement</li>
+                                </ul>
                             </div>
 
+                            <!-- Links -->
                             <div class="mt-6 flex flex-wrap items-center justify-between gap-4">
                                 <span class="text-xs text-white/50">
-                                    HTML • CSS • JS • Bootstrap
+                                    HTML • CSS • JS • Bootstrap • Responsive Web Design
                                 </span>
 
-                                <a href="https://www.shivajigoodpoha.com" target="_blank"
-                                    class="text-teal-400 font-medium hover:underline">
-                                    View Project ↗
-                                </a>
+                                <div class="flex gap-3">
+                                    <a href="https://www.shivajigoodpoha.com" target="_blank"
+                                        class="text-teal-400 font-medium hover:underline">
+                                        Live Project ↗
+                                    </a>
+                                    <a href="https://github.com/Pooja23494/Shivajigoodpoha" target="_blank"
+                                        class="text-teal-400 font-medium hover:underline">
+                                        GitHub ↗
+                                    </a>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
 
-                <!-- Other Projects -->
+                <!-- OTHER PROJECTS GRID -->
                 <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 
-                    <!-- Card 1 -->
+                    <!-- PROJECT CARD 1 -->
                     <div class="reveal" data-reveal>
                         <div
                             class="group rounded-xl overflow-hidden border border-white bg-black/30 hover:border-teal-400 transition h-full flex flex-col">
 
                             <div class="h-44 overflow-hidden">
-                                <img src="./assest/images/project2.png" alt="Stylish Project"
+                                <img src="./assest/images/project2.png" alt="Stylish Web App"
                                     class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                             </div>
 
                             <div class="p-5 flex flex-col grow">
-                                <h3 class="font-semibold mb-2">
-                                    Stylish
+                                <h3 class="font-semibold mb-2 text-white dark:text-neutral-900">
+                                    Stylish – Interactive Web App
                                 </h3>
 
-                                <p class="text-white/60 text-sm leading-relaxed grow">
-                                    JavaScript practical project demonstrating DOM manipulation, events, arrays, and UI
-                                    logic.
-                                    Deployed on Vercel.
+                                <p class="text-white/60 text-sm leading-relaxed grow mb-3">
+                                    Developed an interactive app allowing users to add, update, and sort products
+                                    dynamically. Demonstrates DOM manipulation, user input handling, and responsive UI
+                                    using vanilla JavaScript.
                                 </p>
 
-                                <span class="mt-4 text-xs text-white/50">
-                                    HTML • CSS • Bootstrap • JS
-                                </span>
+                                <ul class="list-disc list-inside mb-3 text-white/70 dark:text-neutral-700 text-xs">
+                                    <li>Dynamic DOM updates, form validation, and event handling</li>
+                                    <li>Responsive layout using HTML, CSS, and Bootstrap</li>
+                                    <li>Client-side sorting logic and interactive features</li>
+                                </ul>
+
+                                <div class="mt-6 flex flex-wrap items-center justify-between gap-4">
+                                    <span class="text-xs text-white/50">
+                                        HTML • CSS • Bootstrap • JavaScript (DOM, Events, Sorting)
+                                    </span>
+
+                                    <div class="flex gap-3">
+                                        <a href="https://java-script-practical-exam-pooja.vercel.app/" target="_blank"
+                                            class="text-teal-400 font-medium hover:underline">
+                                            Live Demo ↗
+                                        </a>
+                                        <a href="https://github.com/Pooja23494/JavaScript-Practical-Exam-Pooja"
+                                            target="_blank" class="text-teal-400 font-medium hover:underline">
+                                            GitHub ↗
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Card 2 -->
+                    <!-- PROJECT CARD 2 -->
                     <div class="reveal" data-reveal>
                         <div
                             class="group rounded-xl overflow-hidden border border-white bg-black/30 hover:border-teal-400 transition h-full flex flex-col">
@@ -387,110 +493,146 @@
                             </div>
 
                             <div class="p-5 flex flex-col grow">
-                                <h3 class="font-semibold mb-2">
-                                    Weather App
+                                <h3 class="font-semibold mb-2 text-white dark:text-neutral-900">
+                                    Weather App – API Integration
                                 </h3>
 
-                                <p class="text-white/60 text-sm leading-relaxed grow">
-                                    Responsive weather app using a public API showing temperature, humidity, wind speed,
-                                    and
-                                    real-time conditions.
+                                <p class="text-white/60 text-sm leading-relaxed grow mb-3">
+                                    Built a responsive web app fetching real-time weather data for any city. Users can
+                                    see temperature, humidity, wind speed, and forecast. Demonstrates API integration,
+                                    dynamic UI updates, and JavaScript logic.
                                 </p>
 
-                                <span class="mt-4 text-xs text-white/50">
-                                    HTML • CSS • JS
-                                </span>
+                                <ul class="list-disc list-inside mb-3 text-white/70 dark:text-neutral-700 text-xs">
+                                    <li>Fetch API integration for real-time weather data</li>
+                                    <li>Responsive UI using HTML, CSS, and JavaScript</li>
+                                    <li>Dynamic DOM updates and user-friendly interface</li>
+                                </ul>
+
+                                <div class="mt-6 flex flex-wrap items-center justify-between gap-4">
+                                    <span class="text-xs text-white/50">
+                                        HTML • CSS • JavaScript • Weather API
+                                    </span>
+
+                                    <div class="flex gap-3">
+                                        <a href="https://pr-10-weather-api-delta.vercel.app/" target="_blank"
+                                            class="text-teal-400 font-medium hover:underline">
+                                            Live Demo ↗
+                                        </a>
+                                        <a href="https://github.com/Pooja23494/PR10-Weather-API" target="_blank"
+                                            class="text-teal-400 font-medium hover:underline">
+                                            GitHub ↗
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
+
             </div>
         </section>
+
         <!-- PROJECTS Section End -->
 
         <!-- TESTIMONIALS / SERVICES Section Start -->
         <section id="testimonials" class="py-20 bg-black/30 dark:bg-white/5">
             <div class="max-w-6xl mx-auto px-5">
-                <h2 class="text-3xl font-bold mb-6">What Clients Say / Services</h2>
+
+                <!-- SECTION TITLE -->
+                <h2 class="text-3xl font-bold mb-6 text-white dark:text-neutral-900">
+                    Testimonials & Services
+                </h2>
+
+                <p class="mb-12 text-white/70 dark:text-neutral-600 max-w-2xl">
+                    Feedback from clients and collaborators on web design, front-end development, and UI/UX projects.
+                    These testimonials highlight my skills in responsive design, interactive UI, and clean code.
+                </p>
 
                 <div class="relative overflow-hidden">
-                    <div id="carousel-track"
-                        class="flex gap-4 md:gap-6 will-change-transform items-stretch min-h-64 md:min-h-72 px-[7.5%] md:px-0">
 
-                        <!-- Slide 1 -->
-                        <div class="carousel-item shrink-0 w-full mx-auto md:w-1/2 lg:w-1/3 px-2 md:px-4 flex">
+                    <!-- CAROUSEL TRACK -->
+                    <div id="carousel-track"
+                        class="flex gap-4 md:gap-6 items-stretch min-h-64 md:min-h-72 px-[7.5%] md:px-0">
+
+                        <!-- TESTIMONIAL 1 -->
+                        <div class="carousel-item shrink-0 w-full md:w-1/2 lg:w-1/3 px-2 md:px-4 flex">
                             <div
                                 class="p-6 bg-black/40 dark:bg-white/10 rounded-2xl fancy-card glow-teal flex flex-col w-full">
-                                <p class="text-white/70 dark:text-black/70 mb-4 grow">
-                                    "Excellent, working with web designer express was great. Thanks to their knowledge
-                                    and determination our website looks great and functions really good."
+                                <p class="text-white/70 dark:text-black/70 mb-4 grow text-sm leading-relaxed">
+                                    "Excellent work! The web design project exceeded expectations. Pooja delivered a
+                                    clean, responsive website with intuitive navigation."
                                 </p>
                                 <div class="mt-auto">
                                     <div class="font-semibold text-teal-400">— Sunil Sharma</div>
-                                    <div class="text-sm text-white/60 dark:text-black/60">Web Design Project</div>
+                                    <div class="text-xs text-white/60 dark:text-black/60">Business Website</div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Slide 2 -->
-                        <div class="carousel-item shrink-0 w-full mx-auto md:w-1/2 lg:w-1/3 px-2 md:px-4 flex">
+                        <!-- TESTIMONIAL 2 -->
+                        <div class="carousel-item shrink-0 w-full md:w-1/2 lg:w-1/3 px-2 md:px-4 flex">
                             <div
                                 class="p-6 bg-black/40 dark:bg-white/10 rounded-2xl fancy-card glow-teal flex flex-col w-full">
-                                <p class="text-white/70 dark:text-black/70 mb-4 grow">
-                                    "Pooja delivered an amazing UI with smooth animations. Our project now feels alive!"
+                                <p class="text-white/70 dark:text-black/70 mb-4 grow text-sm leading-relaxed">
+                                    "Pooja created an engaging UI with smooth animations. Our project now feels
+                                    interactive and professional."
                                 </p>
                                 <div class="mt-auto">
                                     <div class="font-semibold text-teal-400">— Client A</div>
-                                    <div class="text-sm text-white/60 dark:text-black/60">Web Design Project</div>
+                                    <div class="text-xs text-white/60 dark:text-black/60">UI/UX Design</div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Slide 3 -->
-                        <div class="carousel-item shrink-0 w-full mx-auto md:w-1/2 lg:w-1/3 px-2 md:px-4 flex">
+                        <!-- TESTIMONIAL 3 -->
+                        <div class="carousel-item shrink-0 w-full md:w-1/2 lg:w-1/3 px-2 md:px-4 flex">
                             <div
                                 class="p-6 bg-black/40 dark:bg-white/10 rounded-2xl fancy-card glow-teal flex flex-col w-full">
-                                <p class="text-white/70 dark:text-black/70 mb-4 grow">
-                                    "Excellent front-end development! Fast, clean, and interactive."
+                                <p class="text-white/70 dark:text-black/70 mb-4 grow text-sm leading-relaxed">
+                                    "Front-end development done professionally. Clean code, fast performance, and
+                                    interactive features."
                                 </p>
                                 <div class="mt-auto">
                                     <div class="font-semibold text-teal-400">— Client B</div>
-                                    <div class="text-sm text-white/60 dark:text-black/60">Dashboard App</div>
+                                    <div class="text-xs text-white/60 dark:text-black/60">Dashboard Application</div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Slide 4 -->
-                        <div class="carousel-item shrink-0 w-full mx-auto md:w-1/2 lg:w-1/3 px-2 md:px-4 flex">
+                        <!-- TESTIMONIAL 4 -->
+                        <div class="carousel-item shrink-0 w-full md:w-1/2 lg:w-1/3 px-2 md:px-4 flex">
                             <div
                                 class="p-6 bg-black/40 dark:bg-white/10 rounded-2xl fancy-card glow-teal flex flex-col w-full">
-                                <p class="text-white/70 dark:text-black/70 mb-4 grow">
-                                    "Professional, detail-oriented, and very creative."
+                                <p class="text-white/70 dark:text-black/70 mb-4 grow text-sm leading-relaxed">
+                                    "Professional, detail-oriented, and creative front-end development services."
                                 </p>
                                 <div class="mt-auto">
                                     <div class="font-semibold text-teal-400">— Client C</div>
-                                    <div class="text-sm text-white/60 dark:text-black/60">UI Animation</div>
+                                    <div class="text-xs text-white/60 dark:text-black/60">UI Animation Project</div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Slide 5 -->
-                        <div class="carousel-item shrink-0 w-full mx-auto md:w-1/2 lg:w-1/3 px-2 md:px-4 flex">
+                        <!-- TESTIMONIAL 5 -->
+                        <div class="carousel-item shrink-0 w-full md:w-1/2 lg:w-1/3 px-2 md:px-4 flex">
                             <div
                                 class="p-6 bg-black/40 dark:bg-white/10 rounded-2xl fancy-card glow-teal flex flex-col w-full">
-                                <p class="text-white/70 dark:text-black/70 mb-4 grow">
-                                    "Creative animations and clean code – highly recommended!"
+                                <p class="text-white/70 dark:text-black/70 mb-4 grow text-sm leading-relaxed">
+                                    "Creative animations and clean front-end code. Highly recommended for web projects
+                                    and portfolios."
                                 </p>
                                 <div class="mt-auto">
                                     <div class="font-semibold text-teal-400">— Client D</div>
-                                    <div class="text-sm text-white/60 dark:text-black/60">Portfolio Website</div>
+                                    <div class="text-xs text-white/60 dark:text-black/60">Portfolio Website</div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
-                    <!-- Carousel Arrows (hidden on mobile) -->
+                    <!-- CAROUSEL NAVIGATION BUTTONS -->
                     <button id="prev"
                         class="hidden md:flex absolute top-1/2 -translate-y-1/2 left-0 bg-teal-400/70 hover:bg-teal-400 text-black rounded-full w-10 h-10 items-center justify-center z-10">
                         ‹
@@ -499,41 +641,66 @@
                         class="hidden md:flex absolute top-1/2 -translate-y-1/2 right-0 bg-teal-400/70 hover:bg-teal-400 text-black rounded-full w-10 h-10 items-center justify-center z-10">
                         ›
                     </button>
+
                 </div>
             </div>
         </section>
+
 
         <!-- TESTIMONIALS / SERVICES Section End -->
 
         <!-- CONTACT Section Start -->
         <section id="contact" class="py-20 bg-black/40 dark:bg-white/5">
             <div class="max-w-4xl mx-auto px-5">
+
+                <!-- SECTION TITLE -->
+                <h2 class="text-3xl font-bold mb-6 text-white dark:text-neutral-900">
+                    Get In Touch
+                </h2>
+
+                <p class="mb-5 text-white/70 dark:text-neutral-600 text-sm">
+                    I am currently open to <strong>internship</strong> and <strong>entry-level Front-End
+                        Developer</strong> opportunities.
+                    If you have a project, role, or collaboration in mind, feel free to reach out. I am happy to discuss
+                    responsive design,
+                    UI/UX, JavaScript development, and Tailwind CSS projects.
+                </p>
+
                 <div class="reveal" data-reveal>
-                    <h2 class="text-3xl font-bold">Let's build something together</h2>
-                    <p class="text-white/60 dark:text-black/60 mt-2">Available for freelance and full-time
-                        opportunities. Send me a message
-                        and I'll get back to you.</p>
+                    <h3 class="text-xl font-semibold mb-4 text-white dark:text-neutral-900">
+                        Let's build something together
+                    </h3>
+
                     <form id="contactForm" method="post" class="mt-6 grid gap-4">
+
+                        <!-- Name & Email -->
                         <div class="grid md:grid-cols-2 gap-4">
-                            <input name="name" aria-label="Your name" placeholder="Your name" required class="p-3 rounded-md bg-black/30 dark:bg-white/10 border border-white text-white dark:text-black 
-                                placeholder-white/60 dark:placeholder-black/60" />
+                            <input name="name" aria-label="Your name" placeholder="Your name" required
+                                class="p-3 rounded-md bg-black/30 dark:bg-white/10 border border-white text-white dark:text-black placeholder-white/60 dark:placeholder-black/60" />
+
                             <input name="email" type="email" aria-label="Your email" placeholder="Your email" required
-                                class="p-3 rounded-md bg-black/30 dark:bg-white/10 border border-white text-white dark:text-black 
-                                placeholder-white/60 dark:placeholder-black/60" />
+                                class="p-3 rounded-md bg-black/30 dark:bg-white/10 border border-white text-white dark:text-black placeholder-white/60 dark:placeholder-black/60" />
                         </div>
+
+                        <!-- Message -->
                         <textarea name="message" aria-label="Message" rows="6" placeholder="Tell me about your project"
-                            class="p-3 rounded-md bg-black/30 dark:bg-white/10 border border-white text-white dark:text-black
-                          placeholder-white/60 dark:placeholder-black/60"></textarea>
-                        <div class="flex items-center gap-4">
+                            required
+                            class="p-3 rounded-md bg-black/30 dark:bg-white/10 border border-white text-white dark:text-black placeholder-white/60 dark:placeholder-black/60"></textarea>
+
+                        <!-- Submit Button -->
+                        <div class="flex flex-col sm:flex-row items-center gap-4">
                             <button type="submit"
-                                class="px-5 py-3 bg-teal-400 text-black rounded-md font-medium cursor-pointer">Send
-                                message</button>
+                                class="px-5 py-3 bg-teal-400 text-black rounded-md font-medium hover:bg-teal-500 transition cursor-pointer">
+                                Send Message
+                            </button>
                             <div id="formMsg" class="text-sm text-white/60 dark:text-black/60"></div>
                         </div>
                     </form>
                 </div>
+
             </div>
         </section>
+
         <!-- CONTACT Section End -->
 
     </main>
@@ -548,8 +715,10 @@
 
             <!-- Left -->
             <div>
-                © <strong class="text-white dark:text-black">Pooja Patel</strong> — Front-End Developer
+                Designed and built by <strong class="text-white dark:text-black">Pooja Patel </strong> © 2026
+                <p>Built with HTML, CSS, JavaScript, and Tailwind CSS</p>
             </div>
+
 
             <!-- Right -->
             <div class="flex justify-center sm:justify-end gap-6">

@@ -1,7 +1,7 @@
 // Typing effect
 (function () {
     const el = document.getElementById('typed');
-    const phrases = ['Front‑End Developer', 'UI Animator', 'Performance‑Focused Dev'];
+    const phrases = ['Front‑End Developer', 'JavaScript Developer', 'UI Developer'];
     let idx = 0, char = 0, forward = true;
 
     function tick() {
