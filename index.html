@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Front-end developer portfolio of Pooja Patel showcasing responsive web projects built with HTML, CSS, JavaScript, and Tailwind CSS." />
     <title>Pooja Patel — Front‑End Developer</title>
     <link rel="stylesheet" href="./src/output.css" type="text/css" />
     <link rel="stylesheet" href="./assest/css/style.css" type="text/css" />
@@ -123,14 +125,14 @@
                     <div class="flex gap-4 items-center flex-wrap pt-2">
 
                         <!-- Primary CTA -->
-                        <a href="#projects" class="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-linear-to-r from-teal-400 to-teal-600
-                        text-black font-bold shadow-xl hover:scale-[1.03] transition-transform">
+                        <a href="#projects" role="button" class="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-linear-to-r from-teal-400 to-teal-600
+                        text-black font-bold shadow-xl hover:scale-[1.03] transition-transform" aria-label="view work">
                             View Work
                         </a>
 
                         <!-- Secondary CTA -->
-                        <a href="#contact" class="inline-flex items-center gap-3 px-5 py-3 rounded-xl border border-white/30 text-sm
-                        text-white/80 hover:bg-white/10 transition">
+                        <a href="#contact" role="button" class="inline-flex items-center gap-3 px-5 py-3 rounded-xl border border-white/30 text-sm
+                        text-white/80 hover:bg-white/10 transition" aria-label="contact me">
                             Contact Me
                         </a>
                     </div>
@@ -177,11 +179,17 @@
                         </h2>
 
                         <p class="mt-5 max-w-xl text-base leading-relaxed text-white/65 dark:text-black/65">
-                            I am a front-end developer focused on building responsive and accessible web interfaces,
-                            optimizing layouts and assets to improve usability, performance, and cross-device
-                            consistency.
+                            I’m a front-end developer currently pursuing a <strong>Master in Front-End
+                                Development</strong> at
+                            <strong>Red & White Skill Education</strong>. I focus on building responsive, accessible,
+                            and
+                            performance-optimized web interfaces that deliver clean UI and consistent user experiences
+                            across devices.
+                            <br><br>
+                            I’m actively seeking a <strong>Junior Front-End / UI Developer</strong> role where I can
+                            apply my
+                            skills, contribute to real-world projects, and continue growing as a professional developer.
                         </p>
-
 
                         <ul class="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
                             <li class="skill-pill">HTML5 & CSS3</li>
@@ -204,24 +212,24 @@
 
                             <p class="mt-4 text-sm leading-relaxed text-white/65 dark:text-black/65">
                                 From micro-interactions and animated states to optimized markup and
-                                accessible components, I deliver
+                                accessible components, I build
                                 <strong class="text-white dark:text-black">
                                     production-ready, high-performance
                                 </strong>
-                                front-end solutions focused on
-                                <strong>clean UI and smooth experiences</strong>.
+                                front-end solutions with a strong focus on
+                                <strong>clean UI, usability, and smooth user experiences</strong>.
                             </p>
 
                             <div class="mt-6 flex gap-4 flex-wrap">
                                 <!-- Secondary -->
-                                <a href="#projects"
-                                    class="px-5 py-2.5 rounded-lg border border-white/30 text-sm text-white/80 hover:bg-white/10 transition">
+                                <a href="#projects" role="button"
+                                    class="px-5 py-2.5 rounded-lg border border-white/30 text-sm text-white/80 hover:bg-white/10 transition" aria-label="see projects">
                                     See Projects
                                 </a>
 
                                 <!-- Primary -->
-                                <a href="#contact"
-                                    class="px-6 py-2.5 rounded-lg bg-teal-500 text-black font-semibold hover:bg-teal-400 transition">
+                                <a href="#contact" role="button"
+                                    class="px-6 py-2.5 rounded-lg bg-teal-500 text-black font-semibold hover:bg-teal-400 transition" aria-label="let's talk">
                                     Let’s Talk
                                 </a>
                             </div>
@@ -393,9 +401,9 @@
                                     </p>
                                 </div>
                                 <!-- CTA -->
-                                <a href="./assest/PoojaPatel_Resume.pdf" download
+                                <a href="./assest/PoojaPatel_Resume.pdf" download role="button"
                                     class="w-full sm:w-auto text-center px-7 py-3 rounded-xl
-                                bg-teal-500 text-black font-bold hover:bg-teal-400 transition focus:outline-none focus:ring-2 focus:ring-teal-400">
+                                bg-teal-500 text-black font-bold hover:bg-teal-400 transition focus:outline-none focus:ring-2 focus:ring-teal-400" aria-label="download resume">
                                     Download Resume
                                 </a>
                             </div>
@@ -418,11 +426,12 @@
                 <!-- FEATURED PROJECT -->
                 <div class="mb-16 reveal" data-reveal>
                     <div
-                        class="group grid md:grid-cols-2 rounded-3xl overflow-hidden border border-white/20 bg-black/40 hover:border-teal-400 shadow-lg transition">
+                        class="group grid md:grid-cols-2 rounded-3xl overflow-hidden border border-white/20 bg-black/30 transition-all duration-300 ease-out
+                        hover:-translate-y-1 hover:shadow-xl hover:shadow-teal-500/10 hover:border-teal-400 h-full shadow-md">
                         <!-- Image -->
                         <div class="relative group overflow-hidden">
                             <img src="./assest/images/project1.png" alt="Shivaji Good Poha website homepage" class="w-full h-full object-cover
-                            transition-transform duration-500 group-hover:scale-105" />
+                            transition-transform duration-500 group-hover:scale-105" loading="lazy" />
 
                             <!-- Hover Overlay -->
                             <div
@@ -444,11 +453,17 @@
                                 </h3>
 
                                 <p class="text-sm text-white/70 mb-3">
-                                    <strong>Problem:</strong> The business had a static online presence with limited
-                                    visibility and no structured way to showcase products or brand values.<br>
-                                    <br><strong>Solution:</strong> Designed and developed a fully responsive,
-                                    interactive business website that improves brand credibility, highlights products
-                                    clearly, and provides a better user experience across all devices.
+                                    <strong>Problem:</strong> The business lacked a modern digital presence, making it
+                                    difficult to showcase products, build customer trust, and reach a wider audience
+                                    online.<br><br>
+
+                                    <strong>My Role:</strong> Designed and developed a complete business website from
+                                    scratch, focusing on clean UI, responsive layouts, and clear product presentation to
+                                    improve usability and brand credibility.<br><br>
+
+                                    <strong>Result:</strong> Delivered a fully responsive and professional website that
+                                    improves online visibility, clearly communicates brand values, and offers a smooth
+                                    user experience across all devices.
                                 </p>
 
                                 <ul class="space-y-1 text-sm text-white/75 dark:text-neutral-700 mb-4">
@@ -466,32 +481,32 @@
                                 <div class="flex flex-wrap gap-3 text-xs text-white/80">
                                     <span class="flex items-center gap-1">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                                            class="w-4" />
+                                            class="w-4" loading="lazy" alt="html5" />
                                         HTML5
                                     </span>
                                     <span class="flex items-center gap-1">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                                            class="w-4" />
+                                            class="w-4" loading="lazy" alt="css3"/>
                                         CSS3
                                     </span>
                                     <span class="flex items-center gap-1">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                            class="w-4" />
+                                            class="w-4" loading="lazy" alt="javascript"/>
                                         JavaScript
                                     </span>
                                     <span class="flex items-center gap-1">
-                                        <img src="https://img.jsdelivr.com/github.com/twbs.png" class="w-4" />
+                                        <img src="https://img.jsdelivr.com/github.com/twbs.png" class="w-4" loading="lazy" alt="bootstrap"/>
                                         Bootstrap
                                     </span>
                                 </div>
 
                                 <div class="flex gap-4">
-                                    <a href="https://www.shivajigoodpoha.com" target="_blank"
-                                        class="text-teal-400 font-semibold hover:underline">
+                                    <a href="https://www.shivajigoodpoha.com" target="_blank" role="button"
+                                        class="text-teal-400 font-semibold hover:underline" aria-label="view shivaji good poha live site">
                                         Live Site ↗
                                     </a>
-                                    <a href="https://github.com/Pooja23494/Shivajigoodpoha" target="_blank"
-                                        class="text-teal-400 font-semibold hover:underline">
+                                    <a href="https://github.com/Pooja23494/Shivajigoodpoha" target="_blank" role="button"
+                                        class="text-teal-400 font-semibold hover:underline" aria-label="view shivaji good poha">
                                         GitHub ↗
                                     </a>
                                 </div>
@@ -508,11 +523,13 @@
 
                     <!-- PROJECT CARD 1 -->
                     <div class="reveal" data-reveal>
-                        <div class="group rounded-2xl overflow-hidden border border-white/20 bg-black/30 hover:border-teal-400 transition h-full flex 
-                        flex-col shadow-md">
+                        <div
+                            class="group rounded-2xl overflow-hidden border border-white/20 bg-black/30 transition-all duration-300 ease-out
+                        hover:-translate-y-1 hover:shadow-xl hover:shadow-teal-500/10 hover:border-teal-400 h-full flex flex-col shadow-md">
                             <div class="relative group overflow-hidden">
-                                <img src="./assest/images/project2.png" alt="Stylish" class="w-full h-full object-cover
-                                transition-transform duration-500 group-hover:scale-105" />
+                                <img src="./assest/images/java-script-practical-exam-pooja.vercel.app_.png"
+                                    alt="Stylish" class="w-full h-full object-cover
+                                transition-transform duration-500 group-hover:scale-105" loading="lazy" />
 
                                 <!-- Hover Overlay -->
                                 <div
@@ -532,11 +549,16 @@
                                 </h3>
 
                                 <p class="text-sm text-white/70 mb-3">
-                                    <strong>Problem:</strong> Managing and organizing product data dynamically on the
-                                    client side required an interactive and user-friendly interface.<br>
-                                    <br><strong>Solution:</strong> Built an interactive web application that allows
-                                    users to add, update, and sort products dynamically using JavaScript and DOM
-                                    manipulation.
+                                    <strong>Problem:</strong> Managing product data dynamically on the client side
+                                    required an interactive interface that could handle updates without page
+                                    reloads.<br><br>
+
+                                    <strong>My Role:</strong> Built an interactive web application using JavaScript to
+                                    handle dynamic DOM updates, event handling, and client-side product sorting
+                                    functionality.<br><br>
+
+                                    <strong>Result:</strong> Created a smooth, user-friendly experience that allows
+                                    users to manage and organize product data efficiently in real time.
                                 </p>
 
                                 <ul class="space-y-1 text-xs text-white/70 dark:text-neutral-700 mb-4">
@@ -549,32 +571,32 @@
                                     <div class="flex flex-wrap gap-3 text-xs text-white/80">
                                         <span class="flex items-center gap-1">
                                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                                                class="w-4" />
+                                                class="w-4" loading="lazy" alt="html5"/>
                                             HTML5
                                         </span>
                                         <span class="flex items-center gap-1">
                                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                                                class="w-4" />
+                                                class="w-4" loading="lazy" alt="css3"/>
                                             CSS3
                                         </span>
                                         <span class="flex items-center gap-1">
                                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                                class="w-4" />
+                                                class="w-4" loading="lazy" alt="javascript"/>
                                             JavaScript
                                         </span>
                                         <span class="flex items-center gap-1">
-                                            <img src="https://img.jsdelivr.com/github.com/twbs.png" class="w-4" />
+                                            <img src="https://img.jsdelivr.com/github.com/twbs.png" class="w-4" loading="lazy" alt="bootstrap"/>
                                             Bootstrap
                                         </span>
                                     </div>
 
                                     <div class="flex gap-3">
-                                        <a href="LIVE_URL" target="_blank"
-                                            class="text-teal-400 font-medium hover:underline">
+                                        <a href="https://java-script-practical-exam-pooja.vercel.app/" target="_blank" role="button"
+                                            class="text-teal-400 font-medium hover:underline" aria-label="view stylish live demo">
                                             Live ↗
                                         </a>
-                                        <a href="GITHUB_URL" target="_blank"
-                                            class="text-teal-400 font-medium hover:underline">
+                                        <a href="https://github.com/Pooja23494/JavaScript-Practical-Exam-Pooja" role="button"
+                                            target="_blank" class="text-teal-400 font-medium hover:underline" aria-label="view stylish live">
                                             GitHub ↗
                                         </a>
                                     </div>
@@ -586,11 +608,13 @@
 
                     <!-- PROJECT CARD 2 -->
                     <div class="reveal" data-reveal>
-                        <div class="group rounded-2xl overflow-hidden border border-white/20 bg-black/30 hover:border-teal-400 transition h-full flex 
-                        flex-col shadow-md">
+                        <div
+                            class="group rounded-2xl overflow-hidden border border-white/20 bg-black/30 transition-all duration-300 ease-out
+                        hover:-translate-y-1 hover:shadow-xl hover:shadow-teal-500/10 hover:border-teal-400 h-full flex flex-col shadow-md">
                             <div class="relative group overflow-hidden">
-                                <img src="./assest/images/project3.png" alt="Weather App" class="w-full h-full object-cover
-                                transition-transform duration-500 group-hover:scale-105" />
+                                <img src="./assest/images/pr-10-weather-api-delta.vercel.app_.png" alt="Weather App"
+                                    class="w-full h-full object-cover
+                                transition-transform duration-500 group-hover:scale-105" loading="lazy" />
 
                                 <!-- Hover Overlay -->
                                 <div
@@ -610,11 +634,15 @@
                                 </h3>
 
                                 <p class="text-sm text-white/70 mb-3">
-                                    <strong>Problem:</strong> Users needed a simple and responsive way to access
-                                    real-time weather information for different locations.<br>
-                                    <br><strong>Solution:</strong> Developed a weather application that fetches
-                                    real-time data using an external API and displays weather details through a clean,
-                                    responsive UI.
+                                    <strong>Problem:</strong> Users needed a fast and simple way to access accurate,
+                                    real-time weather information for different locations.<br><br>
+
+                                    <strong>My Role:</strong> Developed a responsive weather application using
+                                    JavaScript and Fetch API to retrieve real-time weather data and update the UI
+                                    dynamically based on user input.<br><br>
+
+                                    <strong>Result:</strong> Delivered a clean, responsive weather app that displays
+                                    live temperature, humidity, and wind data with a smooth user experience.
                                 </p>
 
                                 <ul class="space-y-1 text-xs text-white/70 dark:text-neutral-700 mb-4">
@@ -628,17 +656,17 @@
                                     <div class="flex flex-wrap gap-3 text-xs text-white/80">
                                         <span class="flex items-center gap-1">
                                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                                                class="w-4" />
+                                                class="w-4" loading="lazy" alt="html5"/>
                                             HTML5
                                         </span>
                                         <span class="flex items-center gap-1">
                                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                                                class="w-4" />
+                                                class="w-4" loading="lazy" alt="css3"/>
                                             CSS3
                                         </span>
                                         <span class="flex items-center gap-1">
                                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                                class="w-4" />
+                                                class="w-4" loading="lazy" alt="javascript"/>
                                             JavaScript
                                         </span>
                                         <span class="flex items-center gap-1">
@@ -647,12 +675,12 @@
                                     </div>
 
                                     <div class="flex gap-3">
-                                        <a href="LIVE_URL" target="_blank"
-                                            class="text-teal-400 font-medium hover:underline">
+                                        <a href="https://pr-10-weather-api-delta.vercel.app/" target="_blank" role="button"
+                                            class="text-teal-400 font-medium hover:underline" aria-label="view weather app live demo">
                                             Live ↗
                                         </a>
-                                        <a href="GITHUB_URL" target="_blank"
-                                            class="text-teal-400 font-medium hover:underline">
+                                        <a href="https://github.com/Pooja23494/PR10-Weather-API" target="_blank" role="button"
+                                            class="text-teal-400 font-medium hover:underline" aria-label="view weather app live">
                                             GitHub ↗
                                         </a>
                                     </div>
@@ -860,14 +888,21 @@
             </div>
 
             <!-- Right -->
-            <div class="flex justify-center sm:justify-end gap-6">
-                <a href="https://github.com/Pooja23494" target="_blank" rel="noopener noreferrer"
-                    class="hover:text-teal-400 transition hover:-translate-y-0.5">
-                    GitHub
+            <div class="flex justify-center sm:justify-end gap-6 items-center">
+                <!-- GitHub -->
+                <a href="https://github.com/Pooja23494" role="button" target="_blank" rel="noopener noreferrer"
+                    class="flex items-center gap-2 hover:text-teal-400 transition hover:-translate-y-0.5" aria-label="github">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub" class="w-5 h-5" loading="lazy"/>
+                    <span class="text-sm">github.com/Pooja23494</span>
                 </a>
-                <a href="https://www.linkedin.com/in/pooja-patel-aba85b303" target="_blank" rel="noopener noreferrer"
-                    class="hover:text-teal-400 transition hover:-translate-y-0.5">
-                    LinkedIn
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/pooja-patel-aba85b303" target="_blank" role="button" rel="noopener noreferrer"
+                    class="flex items-center gap-2 hover:text-teal-400 transition hover:-translate-y-0.5" aria-label="linkedin">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                        alt="LinkedIn" class="w-5 h-5" loading="lazy"/>
+                    <span class="text-sm">LinkedIn</span>
                 </a>
             </div>
 
